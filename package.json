@@ -1,0 +1,8 @@
+{
+  "name": "react-attrs-map",
+  "version": "0.1.0",
+  "description": "Filter react props allowed only for a specific tag",
+  "author": "Kir Belevich <kir@soulshine.in>",
+  "main": "index.js",
+  "license": "MIT"
+}
