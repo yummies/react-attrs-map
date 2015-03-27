@@ -1,9 +1,0 @@
-tmp/
-index.es6
-.gitignore
-.editorconfig
-.eslintrc
-.babelrc
-*.sublime-*
-*.log
-.DS_Store
