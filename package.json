@@ -1,8 +1,37 @@
 {
   "name": "react-attrs-map",
   "version": "0.1.0",
-  "description": "Filter react props allowed only for a specific tag",
-  "author": "Kir Belevich <kir@soulshine.in>",
+  "description": "Filter React props allowed only for a specific HTML tag",
+  "contributors": [
+    {
+      "name": "Kir Belevich",
+      "email": "kir@soulshine.in",
+      "url": "https://github.com/deepsweet"
+    },
+    {
+      "name": "Denis Koltsov",
+      "email": "iam@mistadikay.com",
+      "url": "https://github.com/mistadikay"
+    }
+  ],
   "main": "index.js",
+  "devDependencies": {
+    "eslint": "0.x.x",
+    "babel-eslint": "2.0.x",
+    "babel": "4.x.x",
+    "babel-core": "4.7.x",
+    "babel-runtime": "4.x.x"
+  },
+  "scripts": {
+    "build": "babel index.es6 -o index.js",
+    "dev": "npm run build -- -w",
+    "lint": "eslint index.es6",
+    "test": "npm run lint",
+    "precommit": "npm run lint",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "license": "MIT"
 }
